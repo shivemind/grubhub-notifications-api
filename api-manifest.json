@@ -1,0 +1,48 @@
+{
+  "name": "notifications-api",
+  "project_name": "GrubHub Notifications API",
+  "domain": "grubhub-platform",
+  "domain_code": "GH",
+  "spec_path": "specs/grubhub-notifications-api.yaml",
+  "source": {
+    "type": "specification",
+    "workspace_id": "b498c773-f575-4e4f-995f-cdd10990188e",
+    "api_id": "",
+    "spec_id": "07d3a58d-0584-4258-9ae6-ececf96a93b6",
+    "schema_id": "",
+    "schema_file_path": "",
+    "spec_file_path": "grubhub-notifications-api.yaml"
+  },
+  "github": {
+    "owner": "shivemind",
+    "repo": "grubhub-notifications-api"
+  },
+  "environments": [
+    "dev",
+    "prod"
+  ],
+  "runtime_urls": {
+    "dev": "http://localhost:3002/api/v1",
+    "prod": "https://api.grubhub.example/notifications/v1"
+  },
+  "environment_values": {},
+  "postman": {
+    "workspace_id": "b498c773-f575-4e4f-995f-cdd10990188e",
+    "workspace_name": "[GH] GrubHub Notifications API",
+    "spec_name": "GrubHub Notifications API",
+    "collection_name": "GrubHub Notifications API",
+    "smoke_collection_name": "GrubHub Notifications API Smoke",
+    "environment_name_prefix": "GrubHub Notifications API",
+    "monitor_name": "GrubHub Notifications API Smoke Monitor",
+    "governance_mapping": {},
+    "system_env_map": {},
+    "requester_email": "",
+    "workspace_admin_user_ids": "",
+    "team_id": "14643263",
+    "workspace_team_id": "",
+    "org_mode": false,
+    "require_api_catalog_link": true,
+    "require_system_env_association": true,
+    "integration_backend": "bifrost"
+  }
+}
