@@ -1,0 +1,7 @@
+type: folder
+name: notifications
+items:
+  - ref: ./{notificationId}/folder.yaml
+  - ref: ./bulk/folder.yaml
+  - ref: ./List notifications.request.yaml
+  - ref: ./Send a notification.request.yaml

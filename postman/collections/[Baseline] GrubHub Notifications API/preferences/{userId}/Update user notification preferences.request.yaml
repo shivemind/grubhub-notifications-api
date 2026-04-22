@@ -1,0 +1,48 @@
+type: http
+name: Update user notification preferences
+url: '{{baseUrl}}/preferences/:userId'
+method: PUT
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: userId
+    value: string
+body:
+  type: json
+  content: |-
+    {
+      "userId": "string",
+      "orderUpdates": true,
+      "promotions": false,
+      "deliveryAlerts": true,
+      "channels": {
+        "push": true,
+        "sms": false,
+        "email": true
+      }
+    }
+examples:
+  - response:
+      statusCode: 200
+      statusText: OK
+      body:
+        type: json
+        content: |-
+          {
+            "userId": "string",
+            "orderUpdates": true,
+            "promotions": false,
+            "deliveryAlerts": true,
+            "channels": {
+              "push": true,
+              "sms": false,
+              "email": true
+            }
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Preferences updated

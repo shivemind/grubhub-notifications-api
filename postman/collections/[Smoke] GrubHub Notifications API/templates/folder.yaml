@@ -1,0 +1,5 @@
+type: folder
+name: templates
+items:
+  - ref: ./{templateId}/folder.yaml
+  - ref: ./List notification templates.request.yaml

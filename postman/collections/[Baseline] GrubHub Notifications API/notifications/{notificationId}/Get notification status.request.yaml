@@ -1,0 +1,32 @@
+type: http
+name: Get notification status
+url: '{{baseUrl}}/notifications/:notificationId'
+method: GET
+headers:
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: notificationId
+    value: string
+examples:
+  - response:
+      statusCode: 200
+      statusText: OK
+      body:
+        type: json
+        content: |-
+          {
+            "id": "string",
+            "userId": "string",
+            "channel": "sms",
+            "templateId": "string",
+            "subject": "string",
+            "body": "string",
+            "status": "failed",
+            "sentAt": "2003-09-21T04:20:28.496Z",
+            "deliveredAt": "1982-11-18T12:26:21.406Z"
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Notification details

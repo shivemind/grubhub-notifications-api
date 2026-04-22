@@ -1,0 +1,54 @@
+type: http
+name: List notifications
+url: '{{baseUrl}}/notifications?userId=string&channel=email&status=sent&limit=50'
+method: GET
+headers:
+  - key: Accept
+    value: application/json
+queryParams:
+  - key: userId
+    value: string
+  - key: channel
+    value: email
+  - key: status
+    value: sent
+  - key: limit
+    value: '50'
+examples:
+  - response:
+      statusCode: 200
+      statusText: OK
+      body:
+        type: json
+        content: |-
+          {
+            "notifications": [
+              {
+                "id": "string",
+                "userId": "string",
+                "channel": "sms",
+                "templateId": "string",
+                "subject": "string",
+                "body": "string",
+                "status": "failed",
+                "sentAt": "1985-10-13T17:19:14.176Z",
+                "deliveredAt": "2012-03-21T23:05:24.268Z"
+              },
+              {
+                "id": "string",
+                "userId": "string",
+                "channel": "email",
+                "templateId": "string",
+                "subject": "string",
+                "body": "string",
+                "status": "sent",
+                "sentAt": "1978-03-07T09:25:42.012Z",
+                "deliveredAt": "1984-10-26T19:10:07.997Z"
+              }
+            ],
+            "total": 2413
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: List of notifications

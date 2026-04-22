@@ -1,0 +1,8 @@
+workflows:
+  syncSpecToCollection:
+    - spec: ../specs/grubhub-notifications-api.yaml
+      collection: ../postman/collections/[Baseline] GrubHub Notifications API
+    - spec: ../specs/grubhub-notifications-api.yaml
+      collection: ../postman/collections/[Smoke] GrubHub Notifications API
+    - spec: ../specs/grubhub-notifications-api.yaml
+      collection: ../postman/collections/[Contract] GrubHub Notifications API

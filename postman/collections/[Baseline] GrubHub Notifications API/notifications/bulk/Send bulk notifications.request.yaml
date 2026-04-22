@@ -1,0 +1,55 @@
+type: http
+name: Send bulk notifications
+url: '{{baseUrl}}/notifications/bulk'
+method: POST
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Accept
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "notifications": [
+        {
+          "userId": "string",
+          "channel": "sms",
+          "body": "string",
+          "templateId": "string",
+          "subject": "string",
+          "metadata": {
+            "key_0": "string"
+          }
+        },
+        {
+          "userId": "string",
+          "channel": "push",
+          "body": "string",
+          "templateId": "string",
+          "subject": "string",
+          "metadata": {
+            "key_0": "string",
+            "key_1": "string",
+            "key_2": "string",
+            "key_3": "string"
+          }
+        }
+      ]
+    }
+examples:
+  - response:
+      statusCode: 201
+      statusText: Created
+      body:
+        type: json
+        content: |-
+          {
+            "queued": 631,
+            "failed": 1433,
+            "batchId": "string"
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Bulk notifications queued

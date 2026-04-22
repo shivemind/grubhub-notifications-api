@@ -1,0 +1,4 @@
+type: folder
+name: '{templateId}'
+items:
+  - ref: ./Get template details.request.yaml

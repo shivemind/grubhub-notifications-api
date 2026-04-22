@@ -1,0 +1,33 @@
+$schema: https://schema.postman.com/json/draft-2020-12/collection/v3.0.0/
+type: collection
+name: '[Smoke] GrubHub Notifications API'
+description: |-
+  REST API for managing push notifications, SMS alerts, and email
+  communications across the GrubHub platform.
+
+
+  Contact Support:
+   Name: GrubHub API Platform Team
+   Email: api-platform@grubhub.com
+id: 9c49dc8b-4121-4b6f-96b5-c1ad60e76eb0
+auth:
+  type: apikey
+  credentials:
+    - key: key
+      value: X-API-Key
+      type: string
+    - key: value
+      value: '{{apiKey}}'
+      type: string
+    - key: in
+      value: header
+      type: string
+variables:
+  - key: baseUrl
+    value: https://api.grubhub.com/notifications/v1
+items:
+  - ref: ./notifications/folder.yaml
+  - ref: ./preferences/folder.yaml
+  - ref: ./templates/folder.yaml
+  - ref: ./health/folder.yaml
+  - ref: ./00 - Resolve Secrets.request.yaml

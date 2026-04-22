@@ -1,0 +1,4 @@
+type: folder
+name: preferences
+items:
+  - ref: ./{userId}/folder.yaml

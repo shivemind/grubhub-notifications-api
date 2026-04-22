@@ -1,0 +1,4 @@
+type: folder
+name: '{notificationId}'
+items:
+  - ref: ./Get notification status.request.yaml

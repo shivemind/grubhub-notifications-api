@@ -1,0 +1,5 @@
+type: folder
+name: '{userId}'
+items:
+  - ref: ./Get user notification preferences.request.yaml
+  - ref: ./Update user notification preferences.request.yaml

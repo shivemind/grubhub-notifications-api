@@ -1,0 +1,72 @@
+type: http
+name: List notifications
+url: '{{baseUrl}}/notifications?userId=string&channel=push&status=sent&limit=50'
+method: GET
+headers:
+  - key: Accept
+    value: application/json
+queryParams:
+  - key: userId
+    value: string
+  - key: channel
+    value: push
+  - key: status
+    value: sent
+  - key: limit
+    value: '50'
+scripts:
+  - type: afterResponse
+    code:
+      - // [Smoke] Auto-generated test assertions
+      - pm.test('Status code is successful (2xx)', function () {
+      - '    pm.response.to.be.success;'
+      - '});'
+      - pm.test('Response time is acceptable', function () {
+      - '    var threshold = parseInt(pm.environment.get(''RESPONSE_TIME_THRESHOLD'') || ''2000'', 10);'
+      - '    pm.expect(pm.response.responseTime).to.be.below(threshold);'
+      - '});'
+      - pm.test('Response body is not empty', function () {
+      - '    if (pm.response.code !== 204) {'
+      - '        var body = pm.response.text();'
+      - '        pm.expect(body.length).to.be.above(0);'
+      - '    }'
+      - '});'
+    language: text/javascript
+examples:
+  - response:
+      statusCode: 200
+      statusText: OK
+      body:
+        type: json
+        content: |-
+          {
+            "notifications": [
+              {
+                "id": "string",
+                "userId": "string",
+                "channel": "sms",
+                "templateId": "string",
+                "subject": "string",
+                "body": "string",
+                "status": "sent",
+                "sentAt": "1954-11-29T08:29:10.600Z",
+                "deliveredAt": "2015-12-16T10:35:53.085Z"
+              },
+              {
+                "id": "string",
+                "userId": "string",
+                "channel": "email",
+                "templateId": "string",
+                "subject": "string",
+                "body": "string",
+                "status": "pending",
+                "sentAt": "2016-09-11T16:08:31.108Z",
+                "deliveredAt": "2001-05-10T12:36:15.699Z"
+              }
+            ],
+            "total": 5784
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: List of notifications

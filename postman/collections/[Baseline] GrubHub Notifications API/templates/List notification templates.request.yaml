@@ -1,0 +1,46 @@
+type: http
+name: List notification templates
+url: '{{baseUrl}}/templates'
+method: GET
+headers:
+  - key: Accept
+    value: application/json
+examples:
+  - response:
+      statusCode: 200
+      statusText: OK
+      body:
+        type: json
+        content: |-
+          {
+            "templates": [
+              {
+                "id": "string",
+                "name": "string",
+                "channel": "sms",
+                "subject": "string",
+                "bodyTemplate": "string",
+                "variables": [
+                  "string",
+                  "string"
+                ],
+                "active": true
+              },
+              {
+                "id": "string",
+                "name": "string",
+                "channel": "email",
+                "subject": "string",
+                "bodyTemplate": "string",
+                "variables": [
+                  "string",
+                  "string"
+                ],
+                "active": false
+              }
+            ]
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: List of templates
