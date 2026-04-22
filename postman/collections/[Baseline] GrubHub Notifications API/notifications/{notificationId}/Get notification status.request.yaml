@@ -18,13 +18,13 @@ examples:
           {
             "id": "string",
             "userId": "string",
-            "channel": "sms",
+            "channel": "email",
             "templateId": "string",
             "subject": "string",
             "body": "string",
-            "status": "failed",
-            "sentAt": "2003-09-21T04:20:28.496Z",
-            "deliveredAt": "1982-11-18T12:26:21.406Z"
+            "status": "delivered",
+            "sentAt": "1990-05-10T10:22:24.783Z",
+            "deliveredAt": "2014-06-23T01:33:19.333Z"
           }
       headers:
         - key: Content-Type

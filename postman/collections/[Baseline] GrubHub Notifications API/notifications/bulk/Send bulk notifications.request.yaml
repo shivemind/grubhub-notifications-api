@@ -24,7 +24,7 @@ body:
         },
         {
           "userId": "string",
-          "channel": "push",
+          "channel": "sms",
           "body": "string",
           "templateId": "string",
           "subject": "string",
@@ -45,8 +45,8 @@ examples:
         type: json
         content: |-
           {
-            "queued": 631,
-            "failed": 1433,
+            "queued": 7055,
+            "failed": 1108,
             "batchId": "string"
           }
       headers:

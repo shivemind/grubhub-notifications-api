@@ -36,14 +36,14 @@ examples:
           {
             "id": "string",
             "name": "string",
-            "channel": "sms",
+            "channel": "push",
             "subject": "string",
             "bodyTemplate": "string",
             "variables": [
               "string",
               "string"
             ],
-            "active": false
+            "active": true
           }
       headers:
         - key: Content-Type

@@ -1,23 +1,20 @@
----
 workspace:
   id: 8d130543-081d-4a4f-a75d-ed82c7800b20
 localResources:
   collections:
-  - "../postman/collections/[Baseline] GrubHub Notifications API"
-  - "../postman/collections/[Smoke] GrubHub Notifications API"
-  - "../postman/collections/[Contract] GrubHub Notifications API"
+    - ../postman/collections/[Baseline] GrubHub Notifications API
+    - ../postman/collections/[Smoke] GrubHub Notifications API
+    - ../postman/collections/[Contract] GrubHub Notifications API
   environments:
-  - "../postman/environments/dev.postman_environment.json"
-  - "../postman/environments/prod.postman_environment.json"
+    - ../postman/environments/dev.postman_environment.json
+    - ../postman/environments/prod.postman_environment.json
   specs:
-  - "../specs/grubhub-notifications-api.yaml"
+    - ../specs/grubhub-notifications-api.yaml
 cloudResources:
   collections:
-    "../postman/collections/[Baseline] GrubHub Notifications API": 52400725-91fc9d30-8d62-4df2-87b5-634e07f60616
-    "../postman/collections/[Smoke] GrubHub Notifications API": 52400725-9c49dc8b-4121-4b6f-96b5-c1ad60e76eb0
-    "../postman/collections/[Contract] GrubHub Notifications API": 52400725-f91486ab-52a3-488f-bf89-6023dc388179
+    ../postman/collections/[Baseline] GrubHub Notifications API: 52400725-91fc9d30-8d62-4df2-87b5-634e07f60616
+    ../postman/collections/[Smoke] GrubHub Notifications API: 52400725-9c49dc8b-4121-4b6f-96b5-c1ad60e76eb0
+    ../postman/collections/[Contract] GrubHub Notifications API: 52400725-f91486ab-52a3-488f-bf89-6023dc388179
   environments:
-    "../postman/environments/dev.postman_environment.json": 52400725-4dc19fa9-5a0e-48b5-9a59-e11c7fd21941
-    "../postman/environments/prod.postman_environment.json": 52400725-8e140d52-eb28-4bcc-8cbb-acd9c94af19e
-  specs:
-    "../specs/grubhub-notifications-api.yaml": 8d0f908c-17b5-4ab3-a0fb-9c9112ed8b32
+    ../postman/environments/dev.postman_environment.json: 52400725-4dc19fa9-5a0e-48b5-9a59-e11c7fd21941
+    ../postman/environments/prod.postman_environment.json: 52400725-8e140d52-eb28-4bcc-8cbb-acd9c94af19e

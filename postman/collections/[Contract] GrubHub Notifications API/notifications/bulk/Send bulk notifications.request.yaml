@@ -19,21 +19,18 @@ body:
           "templateId": "string",
           "subject": "string",
           "metadata": {
-            "key_0": "string",
-            "key_1": "string",
-            "key_2": "string"
+            "key_0": "string"
           }
         },
         {
           "userId": "string",
-          "channel": "email",
+          "channel": "push",
           "body": "string",
           "templateId": "string",
           "subject": "string",
           "metadata": {
             "key_0": "string",
-            "key_1": "string",
-            "key_2": "string"
+            "key_1": "string"
           }
         }
       ]
@@ -107,8 +104,8 @@ examples:
         type: json
         content: |-
           {
-            "queued": 838,
-            "failed": 6425,
+            "queued": 9279,
+            "failed": 127,
             "batchId": "string"
           }
       headers:

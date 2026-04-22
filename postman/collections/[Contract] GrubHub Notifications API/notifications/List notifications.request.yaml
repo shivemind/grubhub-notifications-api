@@ -1,6 +1,6 @@
 type: http
 name: List notifications
-url: '{{baseUrl}}/notifications?userId=string&channel=sms&status=pending&limit=50'
+url: '{{baseUrl}}/notifications?userId=string&channel=sms&status=failed&limit=50'
 method: GET
 headers:
   - key: Accept
@@ -11,7 +11,7 @@ queryParams:
   - key: channel
     value: sms
   - key: status
-    value: pending
+    value: failed
   - key: limit
     value: '50'
 scripts:
@@ -87,27 +87,27 @@ examples:
               {
                 "id": "string",
                 "userId": "string",
-                "channel": "email",
+                "channel": "push",
                 "templateId": "string",
                 "subject": "string",
                 "body": "string",
                 "status": "failed",
-                "sentAt": "1978-11-23T10:28:57.861Z",
-                "deliveredAt": "2013-09-19T13:35:15.809Z"
+                "sentAt": "1948-12-08T23:50:07.498Z",
+                "deliveredAt": "1947-10-19T17:39:56.170Z"
               },
               {
                 "id": "string",
                 "userId": "string",
-                "channel": "sms",
+                "channel": "email",
                 "templateId": "string",
                 "subject": "string",
                 "body": "string",
-                "status": "delivered",
-                "sentAt": "1991-06-10T15:21:01.099Z",
-                "deliveredAt": "1960-11-05T15:55:03.037Z"
+                "status": "pending",
+                "sentAt": "1992-01-13T07:38:29.948Z",
+                "deliveredAt": "1996-12-10T06:44:02.562Z"
               }
             ],
-            "total": 6012
+            "total": 7793
           }
       headers:
         - key: Content-Type

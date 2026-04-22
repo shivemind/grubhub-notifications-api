@@ -12,13 +12,12 @@ body:
   content: |-
     {
       "userId": "string",
-      "channel": "email",
+      "channel": "sms",
       "body": "string",
       "templateId": "string",
       "subject": "string",
       "metadata": {
-        "key_0": "string",
-        "key_1": "string"
+        "key_0": "string"
       }
     }
 scripts:
@@ -92,13 +91,13 @@ examples:
           {
             "id": "string",
             "userId": "string",
-            "channel": "push",
+            "channel": "email",
             "templateId": "string",
             "subject": "string",
             "body": "string",
             "status": "failed",
-            "sentAt": "2008-03-03T15:00:20.107Z",
-            "deliveredAt": "1998-11-12T16:24:59.203Z"
+            "sentAt": "1970-11-19T15:43:47.777Z",
+            "deliveredAt": "2013-11-03T07:32:29.196Z"
           }
       headers:
         - key: Content-Type

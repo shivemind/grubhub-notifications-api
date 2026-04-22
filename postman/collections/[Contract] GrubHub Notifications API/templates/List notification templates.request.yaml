@@ -78,6 +78,18 @@ examples:
               {
                 "id": "string",
                 "name": "string",
+                "channel": "email",
+                "subject": "string",
+                "bodyTemplate": "string",
+                "variables": [
+                  "string",
+                  "string"
+                ],
+                "active": true
+              },
+              {
+                "id": "string",
+                "name": "string",
                 "channel": "push",
                 "subject": "string",
                 "bodyTemplate": "string",
@@ -86,18 +98,6 @@ examples:
                   "string"
                 ],
                 "active": false
-              },
-              {
-                "id": "string",
-                "name": "string",
-                "channel": "sms",
-                "subject": "string",
-                "bodyTemplate": "string",
-                "variables": [
-                  "string",
-                  "string"
-                ],
-                "active": true
               }
             ]
           }

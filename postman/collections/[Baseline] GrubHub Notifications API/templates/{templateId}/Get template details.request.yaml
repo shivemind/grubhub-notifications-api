@@ -18,14 +18,14 @@ examples:
           {
             "id": "string",
             "name": "string",
-            "channel": "sms",
+            "channel": "email",
             "subject": "string",
             "bodyTemplate": "string",
             "variables": [
               "string",
               "string"
             ],
-            "active": true
+            "active": false
           }
       headers:
         - key: Content-Type

@@ -79,7 +79,7 @@ examples:
           {
             "id": "string",
             "name": "string",
-            "channel": "email",
+            "channel": "sms",
             "subject": "string",
             "bodyTemplate": "string",
             "variables": [

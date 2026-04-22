@@ -21,17 +21,20 @@ body:
           "metadata": {
             "key_0": "string",
             "key_1": "string",
-            "key_2": "string"
+            "key_2": "string",
+            "key_3": "string"
           }
         },
         {
           "userId": "string",
-          "channel": "email",
+          "channel": "sms",
           "body": "string",
           "templateId": "string",
           "subject": "string",
           "metadata": {
-            "key_0": "string"
+            "key_0": "string",
+            "key_1": "string",
+            "key_2": "string"
           }
         }
       ]
@@ -62,8 +65,8 @@ examples:
         type: json
         content: |-
           {
-            "queued": 8738,
-            "failed": 1667,
+            "queued": 6882,
+            "failed": 558,
             "batchId": "string"
           }
       headers:

@@ -42,12 +42,12 @@ examples:
                   "string",
                   "string"
                 ],
-                "active": true
+                "active": false
               },
               {
                 "id": "string",
                 "name": "string",
-                "channel": "push",
+                "channel": "email",
                 "subject": "string",
                 "bodyTemplate": "string",
                 "variables": [

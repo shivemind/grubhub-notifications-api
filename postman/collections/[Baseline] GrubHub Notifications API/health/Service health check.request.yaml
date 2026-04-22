@@ -16,7 +16,7 @@ examples:
             "status": "string",
             "service": "string",
             "version": "string",
-            "timestamp": "1976-12-24T00:53:03.035Z"
+            "timestamp": "2005-04-06T08:52:04.694Z"
           }
       headers:
         - key: Content-Type
